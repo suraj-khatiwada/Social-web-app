@@ -1,0 +1,126 @@
+.post {
+  width: 50%;
+  margin-top: 10px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 5px 7px -7px rgb(0, 0, 0, 0.75);
+
+  img {
+    width: 100%;
+  }
+
+  .post__image {
+    padding: 10px;
+  }
+
+  .post__top {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 15px;
+
+    .post__avatar {
+      margin-right: 10px;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: medium;
+      color: rgb(53, 52, 52);
+    }
+    p {
+      font-size: small;
+      color: gray;
+      margin: 0;
+    }
+  }
+
+  .post__likes-comments-count {
+    color: gray;
+    font-size: small;
+    margin-left: 15px;
+    display: flex;
+    margin-bottom: 6px;
+  }
+  .post__bottom {
+    margin-left: 15px;
+  }
+  .post__options {
+    border-top: 1px solid lightgray;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: medium;
+    color: gray;
+    cursor: pointer;
+    padding: 15px;
+    height: 32px;
+
+    .post__option {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      margin: 0;
+
+      &:hover {
+        background-color: #eff2f5;
+        border-radius: 10px;
+
+        cursor: pointer;
+      }
+      &.liked {
+        color: #c71d1d;
+      }
+
+      p {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .post__comments {
+    display: flex;
+
+    margin: 10px 10px 10px 15px;
+    input {
+      outline-width: 0;
+      border: none;
+      margin: 0 10px;
+      border-radius: 9px;
+      background-color: #eff2f5;
+      width: 100%;
+    }
+  }
+  .post__comment-lists {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 10px 15px 15px;
+
+    .post__comment {
+      display: flex;
+      align-items: center;
+      margin-bottom: 14px;
+
+      .post__comment-detail {
+        margin: 0px 10px;
+        background-color: #eff2f5;
+        width: 100%;
+        border-radius: 9px;
+        padding: 6px;
+      }
+
+      h5 {
+        margin: 0;
+        font-size: medium;
+        color: rgb(53, 52, 52);
+        font-size: 14px;
+      }
+      p {
+        margin: 0;
+        font-size: small;
+        color: gray;
+        padding-top: 2px;
+      }
+    }
+  }
+}

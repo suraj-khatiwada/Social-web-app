@@ -1,0 +1,82 @@
+.feed {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+  width: 50%;
+  box-shadow: 0px 5px 7px -7px rgb(0, 0, 0, 0.75);
+
+  .feed__top {
+    display: flex;
+    padding: 15px;
+
+    .feed__top-input {
+      width: 80%;
+      input {
+        outline-width: 0;
+        border: none;
+        margin: 0 10px;
+        border-radius: 9px;
+        background-color: #eff2f5;
+        width: 90%;
+        height: 38px;
+
+        &::placeholder {
+          padding-left: 8px;
+        }
+      }
+    }
+  }
+
+  .feed__bottom {
+    display: flex;
+    justify-content: space-evenly;
+
+    .feed__upload-options {
+      display: flex;
+      align-items: center;
+      margin: 5px;
+      padding: 15px;
+      color: gray;
+
+      &:hover {
+        background-color: #eff2f5;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+
+      h3 {
+        font-size: medium;
+        margin-left: 10px;
+      }
+
+      label {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .input-section {
+    display: none;
+  }
+
+  .feed__close-btn {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    width: 20px;
+    height: 20px;
+    background: #eff2f5;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      background: #dbdada;
+    }
+  }
+}
