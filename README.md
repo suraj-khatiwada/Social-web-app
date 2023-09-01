@@ -7,14 +7,19 @@ v8.16.0
 Installation
 
 Start with cloning this repo on your local machine:
-$ git clone https://github.com/ORG/PROJECT.git
-$ cd PROJECT
+
+$ [git clone https://github.com/ORG/PROJECT.git](https://github.com/suraj-khatiwada/Social-web-app.git)
+
+$ cd Social-web-app
 
 To install and set up the library, run:
-$ npm install -S myLib
 
-Serving the app
+$ npm install
+
+Serving the app:
+
 $ npm start
 
-Building a distribution version
+Building a distribution version:
+
 $ npm run build
